@@ -1,0 +1,18 @@
+<h1>post vui thoi</h1>
+
+<table>
+	<%= form_for :post do |f| %>
+	<tr>
+		<td>tiêu đề: </td>
+		<td><%= f.text_field :title %></td>
+	</tr>
+	<tr>
+		<td>noi dung: </td>
+		<td><%= f.text_area :content %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= f.submit %></td>
+	</tr>
+	<% end %>
+</table>
